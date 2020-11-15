@@ -55,3 +55,27 @@ export var employeeData = [
         salary: 64000
     }
 ];
+
+export function compare(key) {
+
+    return function (a, b) {
+        if (a[key] > b[key]) return 1;
+        if (a[key] < b[key]) return -1;
+
+        return 0;
+    }
+};
+
+export function compareTitle(a, b) {
+    if (a.title > b.title) return 1;
+    if (b.title < b.title) return -1;
+
+    return 0;
+};
+
+export function compareSalary(a, b) {
+    if (a.salary > b.salary) return 1;
+    if (b.salary < b.salary) return -1;
+
+    return 0;
+};
