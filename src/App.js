@@ -1,22 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {employeeData} from "./components/Data/employeeData"
+import {Table, TableRow} from './components/Table/index';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Table> {employeeData.map((emp) => {return <TableRow employee={emp}/>;})}  </Table>
       </header>
     </div>
   );
