@@ -14,7 +14,7 @@ export function Table({children}) {
                             <tr>
                                 <th scope="col">First</th>
                                 <th scope="col">Last</th>
-                                <th scope="col">title</th>
+                                <th scope="col">Title</th>
                                 <th scope="col">Salary</th>
                             </tr>
                         </thead>
